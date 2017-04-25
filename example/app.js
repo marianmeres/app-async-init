@@ -13,12 +13,6 @@ var app = {
 
         // this is critical to the example
         appCallbackStack.push('foo', this.onFooLoad.bind(this));
-
-        // this actually makes no sense, point is to illustrate that the callbacks
-        // are executed even after the "loadAndRun" was executed
-        appAsyncInit.push(function(){
-            console.log('this is to illustrate that you may register the "init callbacks" anywhere 2');
-        })
     },
 
     onFooLoad: function() {

@@ -16,8 +16,8 @@
 
 <script>
     appAsyncInit.push(function(){
-        // everything we critically need is loaded, any optional sanity checks are made,
-        // and we are safe to start running our app
+        // everything we critically need is loaded and executed, any optional
+        // sanity checks are made, and we are safe to start running our app...
         app.initialize($('#app'));
     })
 </script>
@@ -31,7 +31,7 @@
         "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js",
         "app.js"
     ];
-    //
+    // this is to called only once
     appAsyncInit.loadAndRun(urls, function() {
         // this callback is optional...
 
@@ -40,7 +40,7 @@
         // will be executed
 
         // to illustrate the above, let's make sure we run our app only if
-        // jQuery and underscore are loaded properly
+        // jQuery and underscore were loaded properly
         return ($ && _);
     })
 </script>
@@ -71,12 +71,6 @@
 <p style="margin-top: 3em;"><small>
     Source on <a href="https://github.com/marianmeres/app-async-init">GitHub</a>
 </small></p>
-
-<script>
-    appAsyncInit.push(function(){
-        console.log('this is to illustrate that you may register the "init callbacks" anywhere');
-    })
-</script>
 
 </body>
 </html>
