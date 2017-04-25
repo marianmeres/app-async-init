@@ -1,7 +1,7 @@
 /**
  * Simple async point zero loader sugar.
  *
- * Dependency: https://github.com/muicss/loadjs
+ * Dependency: excellent https://github.com/muicss/loadjs
  *
  * @type {{push, loadAndRun}}
  */

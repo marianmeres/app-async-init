@@ -31,6 +31,7 @@
         "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js",
         "app.js"
     ];
+    //
     appAsyncInit.loadAndRun(urls, function() {
         // this callback is optional...
 
@@ -68,6 +69,12 @@
 <p style="margin-top: 3em;"><small>
     Source on <a href="https://github.com/marianmeres/app-async-init">GitHub</a>
 </small></p>
+
+<script>
+    appAsyncInit.push(function(){
+        console.log('this is to illustrate the you may register the "init callbacks" anywhere');
+    })
+</script>
 
 </body>
 </html>

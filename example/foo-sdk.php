@@ -1,6 +1,6 @@
 <?php
     // this is to illustrate slow loading of 3rd party lib...
-    sleep(5);
+    sleep(3);
     header("Content-type: application/javascript");
 ?>
 
