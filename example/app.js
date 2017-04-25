@@ -8,14 +8,18 @@ var app = {
             '</b></p>'
         ].join(""));
 
-        this.$fooButton = $('<button disabled>...in the meantime we\'re still waiting for Foo</button>')
+        this.$fooButton = $([
+            '<button disabled>',
+                '...in the meantime we\'re still waiting for Foo',
+            '</button>'
+        ].join(""))
             .appendTo($root);
 
         // this is critical to our foo example
-        appCallbackStack.push('foo', this.onFooLoad.bind(this));
+        appCallbackStack.push('foo', this.onFooInit.bind(this));
     },
 
-    onFooLoad: function() {
+    onFooInit: function() {
         this.$fooButton
             .on('click', function(){ alert('bar') })
             .prop('disabled', false)
