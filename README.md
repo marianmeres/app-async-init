@@ -2,7 +2,7 @@
 
 My opinionated convention of app async loading... keyword: simple. Time proven.
 
-Dependency: excelent loadjs package https://github.com/muicss/loadjs
+Dependency: [excellent loadjs package](https://github.com/muicss/loadjs)
 
 ## Demo & Source:
 
