@@ -50,9 +50,10 @@
     //
     // 1. we have to load 3rd party libs via theirs own async loading and initializing
     //    (e.g. Facebook SDK, Google auth), but we dont want to include them as
-    //    a hard "pre" load dependency
+    //    a hard "pre" load dependency for our app
     //
-    // 2. we want to have conventional and transparent machanism of handling these cases...
+    // 2. we want to have transparent machanism of letting the global context
+    //    know once the libs are ready (or anything we label by name)
     //
     window.fooAsyncInit = function() { // looks familiar? ;)
         FOO.init();
