@@ -1,4 +1,6 @@
 /**
+ * @author Marian Meres
+ *
  * Simple async point zero loader sugar.
  *
  * Dependency: excellent https://github.com/muicss/loadjs
@@ -28,7 +30,7 @@ var appAsyncInit = (function(loadjs){
 
         /**
          * @param urls
-         * @param preRunCheckCb "ak vrati falsey, tak sa nic zo stacku nevykona"
+         * @param preRunCheckCb
          */
         loadAndRun: function(urls, preRunCheckCb) {
             if (wasStarted) {
@@ -41,7 +43,7 @@ var appAsyncInit = (function(loadjs){
 
             if (!urls.length) { return done(); }
 
-            // order of urls is significant
+            // order of urls is significant with the option async:false below
             loadjs(urls, {
                 // Fetch files in parallel and load them in series (loadjs is cool!)
                 async: false,
