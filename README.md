@@ -1,6 +1,6 @@
 # app-async-init
 
-My opinionated convention of app async loading... keyword: simple. Time proven.
+Opinionated convention of app async loading... keyword: simple.
 
 Dependency: [excellent loadjs package](https://github.com/muicss/loadjs)
 
