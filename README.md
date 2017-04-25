@@ -6,7 +6,7 @@ Dependency: excelent loadjs package https://github.com/muicss/loadjs
 
 ## Demo & Source:
 
-http://marian.meres.sk/app-async-init/example/ 
+http://marian.meres.sk/app-async-init/example/  
 https://github.com/marianmeres/app-async-init
 
 ## Notes
