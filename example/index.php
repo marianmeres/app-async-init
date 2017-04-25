@@ -65,7 +65,7 @@
     }(document, 'script', 'foo-jssdk'));
 </script>
 
-<p><small>
+<p style="margin-top: 3em;"><small>
     Source on <a href="https://github.com/marianmeres/app-async-init">GitHub</a>
 </small></p>
 
