@@ -11,7 +11,7 @@ https://github.com/marianmeres/app-async-init
 
 ## Notes
 
-This is about 2 small functions, so tiny it's hard to call a package... 
+This is about 2 small independent functions, so tiny it's hard to call a package... 
 check the [src](https://github.com/marianmeres/app-async-init/tree/master/src) 
 and [example](https://github.com/marianmeres/app-async-init/tree/master/example) 
 folder for details.

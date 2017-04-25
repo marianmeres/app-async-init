@@ -11,7 +11,7 @@ var app = {
         this.$fooButton = $('<button disabled>...in the meantime we\'re still waiting for Foo</button>')
             .appendTo($root);
 
-        // this is critical to the example
+        // this is critical to our foo example
         appCallbackStack.push('foo', this.onFooLoad.bind(this));
     },
 
