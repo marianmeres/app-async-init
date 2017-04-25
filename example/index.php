@@ -48,9 +48,11 @@
 <script>
     // this example ilustrate the usage of appCallbackStack, which is especially usefull
     // for the usage of third party libs... the scenario is:
-    // 1. we have to load 3rd party lib via theirs own async loading, but we dont
+    // 1. we have to load 3rd party libs via theirs own async loading, but we dont
     //    want to include this 3rd party as a hard dependency
-    // 2. we want to have conventional and transparent machanism of handling this case...
+    // 2. we want to have conventional and transparent machanism of handling these cases...
+    //
+    // e.g. Facebook SDK, Google auth, ...
     //
     window.fooAsyncInit = function() { // looks familiar? ;)
         FOO.init();
@@ -72,7 +74,7 @@
 
 <script>
     appAsyncInit.push(function(){
-        console.log('this is to illustrate the you may register the "init callbacks" anywhere');
+        console.log('this is to illustrate that you may register the "init callbacks" anywhere');
     })
 </script>
 

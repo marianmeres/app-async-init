@@ -17,7 +17,7 @@ var app = {
         // this actually makes no sense, point is to illustrate that the callbacks
         // are executed even after the "loadAndRun" was executed
         appAsyncInit.push(function(){
-            console.log('this is to illustrate the you may register the "init callbacks" anywhere 2');
+            console.log('this is to illustrate that you may register the "init callbacks" anywhere 2');
         })
     },
 
