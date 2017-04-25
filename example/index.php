@@ -46,13 +46,13 @@
 </script>
 
 <script>
-    // this example ilustrate the usage of appCallbackStack, which is especially usefull
-    // for the usage of third party libs... the scenario is:
-    // 1. we have to load 3rd party libs via theirs own async loading, but we dont
-    //    want to include this 3rd party as a hard dependency
-    // 2. we want to have conventional and transparent machanism of handling these cases...
+    // this example ilustrates the usage of appCallbackStack... imagine this:
     //
-    // e.g. Facebook SDK, Google auth, ...
+    // 1. we have to load 3rd party libs via theirs own async loading and initializing
+    //    (e.g. Facebook SDK, Google auth), but we dont want to include them as
+    //    a hard "pre" load dependency
+    //
+    // 2. we want to have conventional and transparent machanism of handling these cases...
     //
     window.fooAsyncInit = function() { // looks familiar? ;)
         FOO.init();

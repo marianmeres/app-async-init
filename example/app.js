@@ -22,8 +22,8 @@ var app = {
     },
 
     onFooLoad: function() {
-        this.$fooButton.on('click', function(){ alert('bar') });
         this.$fooButton
+            .on('click', function(){ alert('bar') })
             .prop('disabled', false)
             .html('Foo ready!');
     }
