@@ -50,7 +50,7 @@
     //    a hard "pre" load dependency for our app
     //
     // 2. we want to have transparent machanism of letting the global context
-    //    know once the libs are ready (or anything we label by name)
+    //    know once these libs (or anything we label by name) are ready
     //
     window.fooAsyncInit = function() { // looks familiar? ;)
         FOO.init();
