@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>App async init example</title>
     <script><?php echo file_get_contents('./loadjs.min.js') ?></script>
-    <script><?php echo file_get_contents('../src/app-async-init.min.js') ?></script>
-    <script><?php echo file_get_contents('../src/app-callback-stack.min.js') ?></script>
+    <script><?php echo file_get_contents('../dist/app-async-init.min.js') ?></script>
+    <script><?php echo file_get_contents('../dist/app-callback-stack.min.js') ?></script>
     <style>
         body {padding: 3em;}
     </style>
