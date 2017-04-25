@@ -31,8 +31,9 @@ var appAsyncInit = (function(loadjs){
         /**
          * @param urls
          * @param preRunCheckCb
+         * @param transportErrCb
          */
-        loadAndRun: function(urls, preRunCheckCb) {
+        loadAndRun: function(urls, preRunCheckCb, transportErrCb) {
             if (wasStarted) {
                 return console.error("appAsyncInit: has already started loading");
             }
@@ -58,6 +59,7 @@ var appAsyncInit = (function(loadjs){
 
                 error: function(pathsNotFound) {
                     console.error("appAsyncInit: load error", pathsNotFound);
+                    transportErrCb && transportErrCb(pathsNotFound);
                 }
             });
 

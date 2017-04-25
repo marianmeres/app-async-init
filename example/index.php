@@ -31,17 +31,14 @@
         "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js",
         "app.js"
     ];
-    // this is to called only once
-    appAsyncInit.loadAndRun(urls, function() {
-        // this callback is optional...
+    // by design, the "loadAndRun" must be called only once (it logs error if called multiple times)
+    appAsyncInit.loadAndRun(urls, function() { // optional...
+        // idea is to do any additional sanity checks here, and if problems
+        // are found just return false. None of the registered callbacks
+        // (via appAsyncInit.push) will be executed
 
-        // idea is to do any additional checks here, and if any problems are found
-        // we may return false and none of the registered callbacks (via appAsyncInit.push)
-        // will be executed
-
-        // to illustrate the above, let's make sure we run our app only if
-        // jQuery and underscore were loaded properly
-        return ($ && _);
+        // for now, everything is OK, so:
+        return true;
     })
 </script>
 
