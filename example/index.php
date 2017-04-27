@@ -54,6 +54,8 @@
     //
     window.fooAsyncInit = function() { // looks familiar? ;)
         FOO.init();
+
+        // this is the signal that our thing (labeled as 'foo') just became ready
         appCallbackStack.ready('foo');
     };
 
