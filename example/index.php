@@ -54,7 +54,7 @@
     //
     window.fooAsyncInit = function() { // looks familiar? ;)
         FOO.init();
-        appCallbackStack.init('foo');
+        appCallbackStack.ready('foo');
     };
 
     (function(d, s, id){

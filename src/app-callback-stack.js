@@ -25,7 +25,7 @@ var appCallbackStack = (function(){
         /**
          * @param stackLabel
          */
-        init: function(stackLabel){
+        ready: function(stackLabel){
             _initialized[stackLabel] = true;
             _stacks[stackLabel] = _stacks[stackLabel] || [];
             _stacks[stackLabel].forEach(function(fn){ fn(); }); // fifo
