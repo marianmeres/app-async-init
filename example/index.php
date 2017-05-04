@@ -23,6 +23,7 @@
 </script>
 
 <script>
+    // list of 3rd party dependecies we critically need and the app itself...
     var urls = [
         "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css",
         "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js",
