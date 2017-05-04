@@ -16,10 +16,10 @@ var app = {
             .appendTo($root);
 
         // this is critical to our foo example
-        appCallbackStack.push('foo', this.onFooInit.bind(this));
+        appCallbackStack.push('foo', this.onFooReady.bind(this));
     },
 
-    onFooInit: function() {
+    onFooReady: function() {
         this.$fooButton
             .on('click', function(){ alert('bar') })
             .prop('disabled', false)
