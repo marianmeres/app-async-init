@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>App async init example</title>
     <script><?php echo file_get_contents('./loadjs.min.js') ?></script>
     <script><?php echo file_get_contents('../dist/app-async-init.min.js') ?></script>
