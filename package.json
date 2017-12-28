@@ -1,0 +1,22 @@
+{
+  "name": "app-async-init",
+  "version": "1.0.0",
+  "description": "Opinionated convention of app async loading... keyword: simple.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianmeres/app-async-init.git"
+  },
+  "author": "Marian Meres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianmeres/app-async-init/issues"
+  },
+  "homepage": "https://github.com/marianmeres/app-async-init#readme"
+}
